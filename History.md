@@ -1,3 +1,85 @@
+1.9.2 / 2015-01-18
+==================
+
+  * Do not ignore some parser errors for mismatched parenthesis ([@TimothyGu](https://github.com/TimothyGu))
+  * Warn for `:` that is not followed by a space ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Fix #1794 (a bizzare bug with a certain combination of inheritance, mixins and &attributes) ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Add `compileClientWithDependenciesTracked` ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Support comments in `case` blocks ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Fix blocks in nested mixins ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Lots more documentation ([@enlore](https://github.com/enlore))
+  * Fix watching in CLI ([@pavel](https://github.com/pavel))
+
+1.9.1 / 2015-01-17
+==================
+
+  * Clean up path/fs functions in CLI as we no longer support node@0.6 ([@TimothyGu](https://github.com/TimothyGu))
+  * Update commander ([@TimothyGu](https://github.com/TimothyGu))
+  * Document `cache` and `parser` options ([@TimothyGu](https://github.com/TimothyGu))
+  * Fix bug in 1.9.0 where we read the file if cache was enabled, even if a string was provided ([@TimothyGu](https://github.com/TimothyGu))
+  * Fix year in changelog ([@tomByrer](https://github.com/tomByrer))
+
+1.9.0 / 2015-01-13
+==================
+
+  * Fix `--watch` sometimes dying when there were file-system errors ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Fix `--watch` by using `fs.watchFile` correctly ([@TimothyGu](https://github.com/TimothyGu))
+  * Fix errors with using the CLI to compile from stdin
+  * Better looking badges ([@TimothyGu](https://github.com/TimothyGu))
+  * Added `--extension` to CLI([@nicocedron](https://github.com/nicocedron) and [@TimothyGu](https://github.com/TimothyGu))
+  * Refactor and improve internal cache handling ([@TimothyGu](https://github.com/TimothyGu))
+  * Loads more tests ([@TimothyGu](https://github.com/TimothyGu))
+
+1.8.2 / 2014-12-16
+==================
+
+  * Use `-` as the default filename when using stdin on CLI ([@TimothyGu](https://github.com/TimothyGu))
+  * Prevent some compiler errors being silenced ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Remove use of non-standard `string.trimLeft()` ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Fix bug in CLI when no name was provided for child template ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Remove dependency on monocle (hopefully fixing installation on 0.8) ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Add gitter chat room ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+
+1.8.1 / 2014-11-30
+==================
+
+  * Fix corner case when the pretty option was passed a non-string truthy value ([@TimothyGu](https://github.com/TimothyGu))
+  * Warn when `lexer` is given as an option ([@TimothyGu](https://github.com/TimothyGu))
+  * Update dependencies ([@TimothyGu](https://github.com/TimothyGu))
+
+1.8.0 / 2014-11-28
+==================
+
+  * Fix empty text-only block ([@rlidwka](https://github.com/rlidwka))
+  * Warn about future change to ISO 8601 style dates ([@TimothyGu](https://github.com/TimothyGu) and [@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Add warnings when data-attributes contain ampersands ([@TimothyGu](https://github.com/TimothyGu))
+  * Allow custom pretty indentation ([@bfred-it](https://github.com/bfred-it))
+  * Add support for an object in the style attribute ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Add support for an object in the class attribute ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Ignore fs module in browser builds ([@sokra](https://github.com/sokra))
+  * Update dependencies ([@hildjj](https://github.com/hildjj))
+  * Check mixin arguments are valid JavaScript expressions ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Remove symlink ([@slang800](https://github.com/slang800))
+
+1.7.0 / 2014-09-17
+==================
+
+  * Add Doctype option on command line ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Support ES6 style rest args in mixins ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Fix support for unicode newlines (\u2028, \u2029) ([@rlidwka](https://github.com/rlidwka))
+  * Expose `globals` option from the `with` module ([@sokra](https://github.com/sokra))
+  * Lots of new documentation ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+
+1.6.0 / 2014-08-31
+==================
+
+  * Allow optional white space after `+` when calling a mixin ([@char101](https://github.com/char101))
+  * Use void-elements module to replace internal self-closing list ([@hemanth](https://github.com/hemanth))
+  * Fix a warning that eroniously warned for un-used blocks if in an extending template from an include (Reported by [@Dissimulazione](https://github.com/Dissimulazione))
+  * Fix mixins not working at end of file ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+  * Fix error reporting when mixin block was followed by blank lines ([@ForbesLindesay](http://www.forbeslindesay.co.uk/))
+
+
 1.5.0 / 2014-07-23
 ==================
 
